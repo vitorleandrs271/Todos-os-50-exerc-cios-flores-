@@ -18,17 +18,13 @@ Data: 23 de Setembro de 2026
 Descritivo: Procedimento: Crie um procedimento contagemRegressiva que receba um número e imprima uma contagem regressiva a partir dele até 0.
 **************************/
 
-
-function contagemRegressiva() {
-    $n = readline("Digite seu número: ");
-    echo "\n";
-
-    for ( $i = $n; $i >= 0; $i--) { 
-        echo $i . "\n"; 
+function contagemRegressiva($numero) {      
+    for ($i = $numero; $i >= 0; $i--) {
+        echo $i . "\n";
     }
-    
 }
 
-contagemRegressiva();
+$n = readline("Digite seu número: ");       
+contagemRegressiva($n);
 
 /** exibe o numero que o usuário digitou de forma regressiva até 0 */

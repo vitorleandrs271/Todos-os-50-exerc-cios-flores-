@@ -27,7 +27,7 @@ $aluno = [
 ];
 
 foreach ($aluno as $chave => $valor) {
-    echo $chave. " = " . $valor ."\n";
+    echo $chave. " : " . $valor ."\n";
 }
 
 /* Exibe a chave do array e o valor dela **/

@@ -25,7 +25,7 @@ do {
    $n = readline("\nDigite um número : ");
    echo "Numero digitado :",  $n;
 
-} while ($n > 0);
+} while ($n >= 0);
 
 echo " Número negativo identificado"
 

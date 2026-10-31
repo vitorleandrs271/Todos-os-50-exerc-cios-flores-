@@ -26,7 +26,7 @@ function obterPrimeiroElemento(){
         $n[$i] = readline("Digite o ". $i. " numero: "); 
 
 	}
-	echo "Primeiro elemento registrado " . $n[1];
+	return $n[0];
 
 
 }
