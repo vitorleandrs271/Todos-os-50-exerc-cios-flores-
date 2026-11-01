@@ -15,22 +15,24 @@ Componentes:
 
 Data: 23 de Setembro de 2026
 
-Descritivo: Função com Array: Crie uma função obterPrimeiroElemento que receba um array e retorne seu primeiro elemento
+Descritivo: Função com Array: Crie uma função obterPrimeiroElemento que receba um array e retorne seu primeiro elemento.
+
 **************************/
 
-function obterPrimeiroElemento(){
-    $n = [];
-
-
-    for ($i=1; $i <= 5; $i++) {
-        $n[$i] = readline("Digite o ". $i. " numero: "); 
-
-	}
-	return $n[0];
-
-
+function obterPrimeiroElemento($array) {
+    return $array[0];
 }
 
-obterPrimeiroElemento();
+$numeros = [];
 
+for ($i = 1; $i <= 5; $i++) {
+    $numeros[] = readline("Digite o " . $i . " numero: ");
+}
 
+echo "Primeiro elemento registrado: " . obterPrimeiroElemento($numeros) . "\n";
+
+/** O usuário digita 5 números, que são guardados no array $numeros.
+    Depois o array é enviado para a função obterPrimeiroElemento, que recebe
+    o array pelo parâmetro e retorna o elemento da posição 0 (o primeiro). */
+
+?>
